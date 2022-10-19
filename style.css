@@ -1,15 +1,22 @@
+
+
+.container {
+    display: grid;
+    grid-template-rows: 0.6fr 2fr 7fr 1fr;
+
+    }
 .zone {
-    padding:30px 50px;
-    margin:40px 60px;
-    cursor:pointer;
-    display:inline-block;
+    display: grid;
+    justify-items: end;
+    margin: 1px;  
+    padding:5px 2px;
+    
     color:#FFF;
     font-size:2em;
     border-radius:4px;
     border:1px solid #bbb;
     transition: all 0.3s linear;
 }
-
 .zone:hover {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
@@ -17,12 +24,14 @@
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
-/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons
 /***********************************************************************
  *  Green Background
  **********************************************************************/
 .green{
     background: #56B870; /* Old browsers */
+    grid-template-columns: 1fr 2fr 2fr 6fr;
+    height: 100px;
     background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
@@ -36,6 +45,7 @@
  **********************************************************************/
 .red{
     background: #C655BE; /* Old browsers */
+    height: 300px;
     background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
@@ -49,6 +59,7 @@
  **********************************************************************/
 .yellow{
     background: #F3AAAA; /* Old browsers */
+    height: auto;
     background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
