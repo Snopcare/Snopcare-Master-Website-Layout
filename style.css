@@ -22,7 +22,32 @@
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-}
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;}
+
+.red {display: flex;
+    justify-content: center;}
+
+.blue {display: grid;
+  grid-template-columns: repeat(4, 250px );
+  grid-template-rows: repeat(2, 250px );
+  gap: 100px;
+  justify-content:  space-around;
+  align-content: center;
+
+   }
+.yellow { display: flex;
+    justify-content: flex-start;}
+
+img {
+    width: 150px;
+    height: 150px; 
+    padding: 20px 20px;
+    background-color: #000000c7;
+    cursor:pointer;
+     }
+.backseat { width: 100%;
+height: 100%; }
+
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons
 /***********************************************************************
